@@ -8,3 +8,9 @@ a{
     text-decoration: none;
     color: white;
 }
+:root{
+    --pd-green: #1DB954;
+    --pd-light-green: #1ED760;
+    --pd-white: ##FFFFFF;
+    --pd-black: #191414;
+}
