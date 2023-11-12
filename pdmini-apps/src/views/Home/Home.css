@@ -1,0 +1,10 @@
+#main{
+    width: calc(100vw - 200px);
+    height: calc(100vh - 60px);
+    background-color: antiquewhite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 20px;
+}
