@@ -1,0 +1,36 @@
+#header{
+    height: 60px;
+    background-color: rgb(129, 192, 126);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 24px;
+}
+.header-logo{
+    font-size: 24px;
+    font-weight: 700;
+}
+.nav-menu{
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+}
+.nav-item{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    height: 60px;
+    padding: 0 12px;
+    color: black;
+}
+.router-link-active.router-link-exact-active .nav-item,
+.nav-item:hover{
+    background-color: rgb(91, 134, 89);
+}
+.nav-item i{
+    font-size: 20px;
+}
+.nav-item__text{
+    margin-left: 6px;
+    font-size: 20px;
+}

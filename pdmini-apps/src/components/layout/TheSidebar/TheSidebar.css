@@ -1,0 +1,27 @@
+#sidebar{
+    width: 200px;
+    height: calc(100vh - 60px);
+    padding: 8px 6px;
+    background-color: rgb(10, 10, 40);
+    color: white;
+}
+.sidebar-item{
+    display: flex;
+    align-items: center;
+    padding: 12px 16px;
+    margin: 4px 0;
+}
+.sidebar-item:hover,
+.router-link-active.router-link-exact-active .sidebar-item{
+    background-color: rgb(129, 192, 126);
+    border-radius: 4px;
+    cursor: pointer;
+}
+.sidebar-item i{
+    font-size: 20px;
+    width: 24px;
+}
+.sidebar-item__text{
+    margin-left: 12px;
+    font-size: 20px;
+}
