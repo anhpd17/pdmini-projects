@@ -1,0 +1,61 @@
+.link-item {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 4px;
+    transition: all 0.25s ease;
+}
+.link-item a{
+    width: 100%;
+}
+.link-item:hover {
+    box-shadow: 0 0 5px #ccc;
+    cursor: pointer;
+}
+
+.link-item__container {
+    padding: 20px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+}
+
+.link-item__title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* type item link */
+.link-item.sb {
+    background-color: rgb(148, 108, 29);
+}
+
+.link-item.sb:hover {
+    background-color: rgb(201, 157, 75);
+}
+
+.link-item.gb {
+    background-color: rgb(85, 85, 179);
+}
+
+.link-item.gb:hover {
+    background-color: rgb(113, 113, 179);
+}
+
+.link-item.rob {
+    background-color: rgb(105, 144, 47);
+}
+
+.link-item.rob:hover {
+    background-color: rgb(155, 187, 108);
+}
+
+.link-item.over {
+    background-color: rgb(146, 52, 52);
+}
+
+.link-item.over:hover {
+    background-color: rgb(186, 109, 109);
+}
