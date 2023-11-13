@@ -1,0 +1,34 @@
+.queue-item{
+    display: flex;
+    align-items: center;
+    margin: 6px 20px 6px 0;
+    padding: 4px 6px;
+    border-radius: 4px;
+    transition: all 0.15s ease;
+}
+.queue-item:hover{
+    background-color: aliceblue;
+    cursor: pointer;
+}
+.queue-item.selected {
+    background-color: aliceblue;
+}
+.queue-item-name {
+    font-weight: 500;
+    font-size: 17px;
+}
+.queue-item-author{
+    font-weight: 300;
+    font-size: 14px;
+}
+.queue-item__info{
+    margin-left: 12px;
+}
+.queue-item-name{
+    margin-bottom: 6px;
+}
+.queue-thumbnail{
+    width: 44px;
+    height: 44px;
+    border-radius: 4px;
+}
