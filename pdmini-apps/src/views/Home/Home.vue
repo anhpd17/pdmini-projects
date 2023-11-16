@@ -20,8 +20,7 @@
                     />
                 </h4>
                 <p class="home-content__left__desc">
-                    Tôi là người khó tính, hướng nội, hay cười và nói nhiều khi
-                    có thể...
+                    Tôi là người khó tính, hướng nội, hay cười và nói nhiều
                 </p>
                 <PDButton text="About Me" />
             </div>

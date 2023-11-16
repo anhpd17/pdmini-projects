@@ -38,10 +38,12 @@
             </div>
         </div>
     </div>
+    <PDMusicToast :playingSong="playingSong" v-if="isPlaying" />
 </template>
 <script setup>
 import { ref } from "vue";
 import songs from "../../assets/data/songs.json";
+import PDMusicToast from "../../components/base/PDMusicToast/PDMusicToast.vue";
 import PDAudioPlayer from "../../components/base/PDAudioPlayer/PDAudioPlayer.vue";
 import QueueItem from "../../components/base/QueueItem/QueueItem.vue";
 const audioList = songs;
