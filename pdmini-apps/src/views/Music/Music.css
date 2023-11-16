@@ -1,11 +1,13 @@
 #main-music{
-    width: calc(100vw - 200px);
+    width: 100vw;
+    height: 100vh;
     display: flex;
-    justify-content: space-between;
+    background-image: url('../../assets/img/bg-dark-green.jpg');
+    background-size: cover;
 }
 #music-player{
     flex: 1;
-    padding: 24px;
+    padding: 24px 60px;
     display: flex;
     justify-content: space-around;
     flex-direction: column;
@@ -13,8 +15,10 @@
 }
 #music-queue {
     width: 520px;
-    background-color: burlywood;
-    padding: 24px 12px;
+    padding: 36px 12px;
+    color: var(--pd-white);
+    height: 100vh;
+    background-color: var(--pd-black);
 }
 
 .player-thumbnail{
@@ -41,6 +45,7 @@
 
 .player-info{
     text-align: center;
+    color: var(--pd-white);
 }
 .player-title{
     margin-bottom: 12px;
@@ -49,13 +54,14 @@
 
 .queue-list{
     margin-top: 12px;
-    max-height: calc(100vh - 60px - 90px);
+    max-height: calc(100vh - 112px);
     overflow-y: scroll;
 }
 /* Width and height of the scrollbar track */
 ::-webkit-scrollbar {
     width: 6px;
     height: 10px;
+    display: none;
 }
 
 /* Background color of the scrollbar track */

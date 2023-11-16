@@ -1,22 +1,47 @@
 <template>
-  <div id="sidebar">
-    <router-link to="/mindx">
-      <div class="sidebar-item">
-        <i class="fa-solid fa-link"></i>
-        <div class="sidebar-item__text">MindX Links</div>
-      </div>
-    </router-link>
-    <router-link to="/music">
-      <div class="sidebar-item">
-        <i class="fa-solid fa-music"></i>
-        <div class="sidebar-item__text">Nghe nhạc</div>
-      </div>
-    </router-link>
-    <div class="sidebar-item">
-      <i class="fa-solid fa-gamepad"></i>
-      <div class="sidebar-item__text">Mini Games</div>
+    <div id="sidebar">
+        <a href="#main-home">
+            <div class="sidebar-item">
+                <img
+                    src="../../../assets/img/house.png"
+                    alt=""
+                    class="sidebar-item__img"
+                />
+            </div>
+        </a>
+        <a href="#main-music">
+            <div class="sidebar-item">
+                <img
+                    src="../../../assets/img/music.png"
+                    alt=""
+                    class="sidebar-item__img"
+                />
+            </div>
+        </a>
+        <a href="#mindx-main">
+            <div class="sidebar-item">
+                <img
+                    src="../../../assets/img/mindx.jpg"
+                    alt=""
+                    class="sidebar-item__img"
+                />
+            </div>
+        </a>
+        <div class="sidebar-item">
+            <img
+                src="../../../assets/img/game.jpg"
+                alt=""
+                class="sidebar-item__img"
+            />
+        </div>
+        <div class="sidebar-item">
+            <img
+                src="../../../assets/img/todo.png"
+                alt=""
+                class="sidebar-item__img"
+            />
+        </div>
     </div>
-  </div>
 </template>
 <script setup></script>
 <style>

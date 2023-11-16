@@ -1,14 +1,16 @@
 #header{
     height: 60px;
-    background-color: rgb(129, 192, 126);
+    background-color: var(--pd-green-800);
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 24px;
+    box-shadow: 0 0 5px var(--pd-gray);
 }
 .header-logo{
     font-size: 24px;
-    font-weight: 700;
+    font-weight: 700; 
+    color: var(--pd-gray);
 }
 .nav-menu{
     display: flex;
@@ -19,18 +21,23 @@
     display: flex;
     align-items: center;
     cursor: pointer;
-    height: 60px;
-    padding: 0 12px;
-    color: black;
+    padding: 8px 12px;
+    border-radius: 4px;
 }
 .router-link-active.router-link-exact-active .nav-item,
 .nav-item:hover{
-    background-color: rgb(91, 134, 89);
+    background-color: var(--pd-white-opa);
+}
+.router-link-active.router-link-exact-active .nav-item .nav-item__text,
+.router-link-active.router-link-exact-active .nav-item i{
+    color: var(--pd-black);
 }
 .nav-item i{
-    font-size: 20px;
+    font-size: 18px;
+    color: var(--pd-gray);
 }
 .nav-item__text{
-    margin-left: 6px;
-    font-size: 20px;
+    margin-left: 10px;
+    font-size: 18px;
+    color: var(--pd-gray);
 }

@@ -9,8 +9,17 @@ a{
     color: white;
 }
 :root{
-    --pd-green: #1DB954;
+    --pd-green-800: #033C1A;
+    --pd-green-700: #055B27;
+    --pd-green-600: #067933;
+    --pd-green-500: #089740;
     --pd-light-green: #1ED760;
-    --pd-white: ##FFFFFF;
+    --pd-white: #FFFFFF;
+    --pd-white-opa: rgba(231, 245, 236, 0.6);
+    --pd-gray: #ece9e9;
     --pd-black: #191414;
+    --pd-orange-500: #FF9800;
+}
+html{
+    scroll-behavior: smooth;
 }

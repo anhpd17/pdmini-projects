@@ -2,7 +2,7 @@
     <div class="link-item" :class="props.type">
         <a target="_blank" :href="props.url" class="link-item__container">
             <p class="link-item__title">{{ props.title }}</p>
-            <span>&#62;</span>
+            <i class="fa-solid fa-right-to-bracket"></i>
         </a>
     </div>
 </template>

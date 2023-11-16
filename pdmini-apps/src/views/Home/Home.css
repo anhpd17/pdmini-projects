@@ -1,10 +1,43 @@
-#main{
-    width: calc(100vw - 200px);
-    height: calc(100vh - 60px);
-    background-color: antiquewhite;
+#main-home{
+    width: 100vw;
+    height: 100vh;
+    background-color: transparent;
+    color: var(--pd-white);
+}
+.home-header{
+    width: 100%;
+    height: 120px;
     display: flex;
     align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    row-gap: 20px;
+    justify-content: space-between;
+    padding: 0 200px;
+}
+.home-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 200px;
+    margin-top: 80px;
+}
+.home-content__left__name {
+    font-size: 60px;
+}
+.home-content__left__job {
+    font-size: 40px;
+    margin: 8px 0 24px 0;
+    color: var(--pd-orange-500);
+}
+.home-content__left__desc {
+    font-size: 20px
+}
+.home-content__right{
+    width: 360px;
+    height: 360px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.home-content__right img{
+    display: block;
+    height: 100%;
+    object-fit: cover;
 }

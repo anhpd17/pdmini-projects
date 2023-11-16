@@ -27,7 +27,7 @@
 }
 .audio__play-next:hover,
 .audio__play-prev:hover{
-    background-color: rgb(227, 222, 222);
+    background-color: var(--pd-gray);
     border-radius: 50%;
 }
 .audio__play-rate span{
@@ -42,7 +42,7 @@
     padding: 6px 12px;
 }
 .audio__play-rate__dropdown div:hover{
-    background-color: white;
+    background-color: var(--pd-white);
     color: black;
 }
 .audio__btn-wrap{
