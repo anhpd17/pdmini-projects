@@ -19,6 +19,7 @@ a{
     --pd-gray: #ece9e9;
     --pd-black: #191414;
     --pd-orange-500: #FF9800;
+    --pd-orange-700: #CC7A00;
 }
 html{
     scroll-behavior: smooth;

@@ -11,10 +11,18 @@
         <div class="home-content">
             <div class="home-content__left">
                 <h1 class="home-content__left__name">PHAM DUC ANH</h1>
-                <h4 class="home-content__left__job">WEB DEVELOPER</h4>
+                <h4 class="home-content__left__job">
+                    <VueWriter
+                        :array="['Web Developer', 'Programming Teacher']"
+                        :typeSpeed="70"
+                        :eraseSpeed="50"
+                        :delay="2000"
+                    />
+                </h4>
                 <p class="home-content__left__desc">
-                    daskdhakjshdkjahsdkjhaskjdhjsahdkasdkjahdskjahsdkjhaskjdh
+                    Tôi là người khó tính, hướng nội, hay cười và nói nhiều
                 </p>
+                <PDButton text="About Me" />
             </div>
             <div class="home-content__right">
                 <img src="../../assets/img/me.jpg" alt="" />
@@ -24,6 +32,7 @@
 </template>
 <script setup>
 import PDButton from "../../components/base/PDButton/PDButton.vue";
+import VueWriter from "vue-writer";
 </script>
 <style>
 @import url("./Home.css");

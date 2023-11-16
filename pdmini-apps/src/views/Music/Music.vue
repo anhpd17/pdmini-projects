@@ -8,7 +8,7 @@
             <div class="player-thumbnail">
                 <img
                     id="player-thumbnail-img"
-                    :class="{ thumbnailRotate: isPlaying }"
+                    :class="{ thumbnailStop: !isPlaying }"
                     :src="playingSong.links.images[0].url"
                     alt=""
                 />
@@ -16,7 +16,7 @@
             <PDAudioPlayer
                 ref="pdPlayerRef"
                 :audioList="[playingSong]"
-                themeColor="#089740"
+                themeColor="#1ED760"
                 :handleBeforePlay="handleBeforePlay"
                 :handleBeforeNext="handleBeforeNext"
                 :handleBeforePrev="handleBeforePrev"
@@ -38,10 +38,12 @@
             </div>
         </div>
     </div>
+    <PDMusicToast :playingSong="playingSong" v-if="isPlaying" />
 </template>
 <script setup>
 import { ref } from "vue";
 import songs from "../../assets/data/songs.json";
+import PDMusicToast from "../../components/base/PDMusicToast/PDMusicToast.vue";
 import PDAudioPlayer from "../../components/base/PDAudioPlayer/PDAudioPlayer.vue";
 import QueueItem from "../../components/base/QueueItem/QueueItem.vue";
 const audioList = songs;
