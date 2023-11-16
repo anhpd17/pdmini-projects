@@ -1,5 +1,5 @@
 <template>
-    <main id="main-music">
+    <div id="main-music">
         <div id="music-player">
             <div class="player-info">
                 <h2 class="player-title">{{ playingSong.name }}</h2>
@@ -16,7 +16,7 @@
             <PDAudioPlayer
                 ref="pdPlayerRef"
                 :audioList="[playingSong]"
-                themeColor="#1DB954"
+                themeColor="#089740"
                 :handleBeforePlay="handleBeforePlay"
                 :handleBeforeNext="handleBeforeNext"
                 :handleBeforePrev="handleBeforePrev"
@@ -37,7 +37,7 @@
                 />
             </div>
         </div>
-    </main>
+    </div>
 </template>
 <script setup>
 import { ref } from "vue";
