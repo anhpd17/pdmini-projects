@@ -10,14 +10,5 @@ const props = defineProps({
 });
 </script>
 <style>
-.btn-primary {
-    border: none;
-    outline: none;
-    padding: 16px 28px;
-    background-color: var(--pd-orange-500);
-    border-radius: 30px;
-    font-size: 20px;
-    color: var(--pd-white);
-    font-weight: 500;
-}
+@import url("./PDButton.css");
 </style>

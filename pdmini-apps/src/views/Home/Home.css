@@ -26,9 +26,11 @@
     font-size: 40px;
     margin: 8px 0 24px 0;
     color: var(--pd-orange-500);
+    text-transform: uppercase;
 }
 .home-content__left__desc {
-    font-size: 20px
+    font-size: 20px;
+    margin-bottom: 30px;
 }
 .home-content__right{
     width: 360px;

@@ -8,7 +8,7 @@
             <div class="player-thumbnail">
                 <img
                     id="player-thumbnail-img"
-                    :class="{ thumbnailRotate: isPlaying }"
+                    :class="{ thumbnailStop: !isPlaying }"
                     :src="playingSong.links.images[0].url"
                     alt=""
                 />
@@ -16,7 +16,7 @@
             <PDAudioPlayer
                 ref="pdPlayerRef"
                 :audioList="[playingSong]"
-                themeColor="#089740"
+                themeColor="#1ED760"
                 :handleBeforePlay="handleBeforePlay"
                 :handleBeforeNext="handleBeforeNext"
                 :handleBeforePrev="handleBeforePrev"

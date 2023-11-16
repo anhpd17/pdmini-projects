@@ -30,9 +30,10 @@
     width: 100%;
     height: 100%;
     border-radius: 50%;
-}
-#player-thumbnail-img.thumbnailRotate{
     animation: thumbnailRotate 20s linear infinite;
+}
+#player-thumbnail-img.thumbnailStop{
+    animation-play-state: paused;
 }
 @keyframes thumbnailRotate {
     0% {
