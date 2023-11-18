@@ -6,11 +6,11 @@
     align-items: center;
     column-gap: 16px;
     padding: 6px 6px 6px 32px;
-    background-color: var(--pd-green-800);
+    background-color: var(--pd-orange-700);
     color: var(--pd-white);
     border-top-left-radius: 32px;
     border-bottom-left-radius: 32px;
-    box-shadow: 0 0 5px var(--pd-white-opa);
+    box-shadow: 0 0 5px var(--pd-green-800);
     animation: slideIn 0.25s ease-in-out;
 }
 @keyframes slideIn {

@@ -5,7 +5,7 @@
                 <h1>ANHPD17</h1>
             </div>
             <div class="home-header__contact">
-                <PDButton text="CONTACT ME" />
+                <!-- <PDButton text="CONTACT ME" /> -->
             </div>
         </div>
         <div class="home-content">

@@ -1,49 +1,48 @@
 <template>
     <div id="sidebar">
-        <a href="#main-home">
-            <div class="sidebar-item">
-                <img
-                    src="../../../assets/img/house.png"
-                    alt=""
-                    class="sidebar-item__img"
-                />
-            </div>
-        </a>
-        <a href="#main-music">
-            <div class="sidebar-item">
-                <img
-                    src="../../../assets/img/music.png"
-                    alt=""
-                    class="sidebar-item__img"
-                />
-            </div>
-        </a>
-        <a href="#mindx-main">
-            <div class="sidebar-item">
-                <img
-                    src="../../../assets/img/mindx.jpg"
-                    alt=""
-                    class="sidebar-item__img"
-                />
-            </div>
-        </a>
-        <div class="sidebar-item">
+        <div
+            class="sidebar-item"
+            @click="scrollToElement('main-home')"
+            title="Home"
+        >
             <img
-                src="../../../assets/img/game.jpg"
+                src="../../../assets/img/house.png"
                 alt=""
                 class="sidebar-item__img"
             />
         </div>
-        <div class="sidebar-item">
+        <div
+            class="sidebar-item"
+            @click="scrollToElement('main-music')"
+            title="Music"
+        >
             <img
-                src="../../../assets/img/todo.png"
+                src="../../../assets/img/music.png"
+                alt=""
+                class="sidebar-item__img"
+            />
+        </div>
+        <div
+            class="sidebar-item"
+            @click="scrollToElement('mindx-main')"
+            title="MindX Links"
+        >
+            <img
+                src="../../../assets/img/mindx.jpg"
                 alt=""
                 class="sidebar-item__img"
             />
         </div>
     </div>
 </template>
-<script setup></script>
+<script setup>
+function scrollToElement(elementId) {
+    const element = document.getElementById(elementId);
+    if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+    }
+}
+</script>
 <style>
 @import url("./TheSidebar.css");
 </style>
